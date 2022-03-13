@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:     Florentine
+author:         Chelsea
+license:        Creative Commons CC-BY-NC-SA
+-->
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<include>./_inc/icons/menuicons.xml</include>
+
+	<variables>
+		<headerFont>./_inc/fonts/Opensans-Light.ttf</headerFont>
+		<bodyFont>./_inc/fonts/Oxygen-Regular.ttf</bodyFont>
+		<boldFont>./_inc/fonts/Cabin-Bold.ttf</boldFont>
+		<spacerImage>./_inc/images/space.png</spacerImage>
+	</variables>
+
+	<view name="system,basic,detailed,video,grid">
+		<helpsystem name="help">
+			<pos>1 1</pos>
+		</helpsystem>
+		<image name="logo">
+			<path>./_inc/systems/${system.theme}.svg</path>
+		</image>
+		<text name="logoText">
+			<fontPath>${bodyFont}</fontPath>
+			<forceUppercase>true</forceUppercase>
+			<lineSpacing>1</lineSpacing>
+			<alignment>center</alignment>
+			<fontSize>0.1</fontSize>
+			<color>ffffff</color>
+		</text>
+		<image name="background" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${spacerImage}</path>
+			<tile>true</tile>
+			<zIndex>1</zIndex>
+			<color>111111</color>
+		</image>
+		<image name="backgroundAll" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/images/bgabstract.jpg</path>
+			<zIndex>1</zIndex>
+			<color>ffffff</color>
+		</image>
+	</view>
+
+	<view name="system">
+		<carousel name="systemcarousel">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<type>horizontal</type>
+			<color>ffffff00</color>
+			<size>1 1</size>
+			<logoSize>0.55 0.425</logoSize>
+			<logoScale>1</logoScale>
+			<maxLogoCount>1</maxLogoCount>
+		</carousel>
+		<text name="systemInfo">
+			<fontPath>${boldFont}</fontPath>
+			<fontSize>0.035</fontSize>
+			<color>ffffffcc</color>
+		</text>
+		<image name="border" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/images/border.png</path>
+			<color>ffffffcc</color>
+			<zIndex>3</zIndex>
+		</image>
+	</view>
+
+	<view name="basic,detailed,video,grid">
+		<image name="logo">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.175</pos>
+			<maxSize>0.4 0.15</maxSize>
+		</image>
+		<text name="logoText">
+			<pos>0.05 0.14</pos>
+			<size>0.9 0.075</size>
+			<fontSize>0.06</fontSize>
+			<color>ffffffcc</color>
+		</text>
+		<image name="border" extra="true">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/images/borderwhite.png</path>
+			<color>ffffffcc</color>
+			<zIndex>3</zIndex>
+		</image>
+	</view>
+
+	<view name="basic">
+		<textlist name="gamelist">
+			<pos>0.25 0.28</pos>
+			<size>0.5 0.65</size>
+			<lineSpacing>1.5</lineSpacing>
+			<alignment>center</alignment>
+			<fontSize>0.04</fontSize>
+			<scrollSound>./_inc/sounds/select.wav</scrollSound>
+			<fontPath>${bodyFont}</fontPath>
+			<horizontalMargin>0.008</horizontalMargin>
+			<selectorColor>ffffff55</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>ffffffcc</primaryColor>
+			<secondaryColor>ffffffcc</secondaryColor>
+		</textlist>
+	</view> 
+
+	<view name="detailed">
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.775 0.62</pos>
+			<maxSize>0.4 0.6</maxSize>
+		</image>
+	</view>
+	
+	<view name="video">
+		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<pos>0.775 0.622</pos>
+			<maxSize>0.4 0.6</maxSize>
+			<delay>0.5</delay>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<snapshotSource>image</snapshotSource>
+			<snapshotSource>thumbnail</snapshotSource>
+		</video>
+	</view>
+
+	<view name="detailed,video">
+		<textlist name="gamelist">
+			<pos>0.05 0.331</pos>
+			<size>0.5 0.67</size>
+			<alignment>left</alignment>
+			<lineSpacing>1.81</lineSpacing>
+			<fontSize>0.04</fontSize>
+			<scrollSound>./_inc/sounds/select.wav</scrollSound>
+			<fontPath>${bodyFont}</fontPath>
+			<horizontalMargin>0.008</horizontalMargin>
+			<selectorColor>ffffff55</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>ffffffcc</primaryColor>
+			<secondaryColor>ffffffcc</secondaryColor>
+		</textlist>
+	</view>
+
+	<view name="grid">
+		<imagegrid name="gamegrid">
+			<pos>0.05 0.325</pos>
+			<size>0.9 0.60</size>
+			<margin>0 0</margin>
+			<padding>0 0 0 0</padding>
+			<autoLayout>3 1</autoLayout>
+			<autoLayoutSelectedZoom>1.0</autoLayoutSelectedZoom>
+			<centerSelection>true</centerSelection>
+			<animateSelection>false</animateSelection>
+			<scrollSound>./_inc/sounds/select.wav</scrollSound>
+			<scrollDirection>vertical</scrollDirection>
+			<scrollLoop>false</scrollLoop>
+		</imagegrid>
+		<gridtile name="default">
+			<padding>5 5</padding>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<selectionMode>image</selectionMode>
+			<backgroundColor>11111100</backgroundColor>
+			<imageColor>ffffff44</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<backgroundColor>ffffff11</backgroundColor>
+			<imageColor>ffffffff</imageColor>
+			</gridtile>
+		<text name="gridtile">
+			<alignment>center</alignment>
+			<fontPath>${bodyFont}</fontPath>
+			<fontSize>0.036</fontSize>
+			<lineSpacing>1.2</lineSpacing>
+			<color>ffffff99</color>
+		</text>
+			<text name="gridtile_selected">
+			<color>ffffff</color>
+		</text>
+	</view>
+
+	<view name="screen">
+		<text name="clock">
+			<origin>0 0</origin>
+			<pos>-0.032 0.03</pos>
+			<size>0.1666666666666667 0.03125</size>
+			<fontSize>0.035</fontSize>
+			<alignment>center</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>${boldFont}</fontPath>
+			<color>ffffffcc</color>
+		</text>
+		<batteryIndicator name="batteryIndicator">
+			<pos>0.12 0.013</pos>
+			<size>0.07 0.07</size>
+			<full>./_inc/images/battery-100.svg</full>
+			<at75>./_inc/images/battery-75.svg</at75>
+			<at50>./_inc/images/battery-50.svg</at50>
+			<at25>./_inc/images/battery-25.svg</at25>
+			<empty>./_inc/images/battery-0.svg</empty>
+			<incharge>./_inc/images/battery-charging.svg</incharge>
+			<networkIcon>./_inc/images/wifi.svg</networkIcon>
+			<color>ffffffcc</color>
+		</batteryIndicator>
+		<controllerActivity name="controllerActivity">
+			<visible>false</visible>
+		</controllerActivity>
+	</view>
+
+	<view name="menu">
+		<menuText name="menutitle">
+			<fontPath>${headerFont}</fontPath>
+			<fontSize>0.095</fontSize>
+			<color>cbcbcb</color>
+		</menuText>
+		<menuText name="menufooter">
+			<fontPath>${bodyFont}</fontPath>
+			<fontSize>0.033</fontSize>
+			<color>777777ff</color>
+		</menuText>
+		<menuText name="menutext">
+			<fontPath>${bodyFont}</fontPath>
+			<fontSize>0.0407</fontSize>
+			<color>969696</color>
+			<separatorColor>323232</separatorColor>
+			<selectorColor>000000</selectorColor>
+			<selectedColor>cbcbcb</selectedColor>
+		</menuText>
+		<menuTextSmall name="menutextsmall">
+			<fontSize>0.033</fontSize>
+			<color>cbcbcb</color>
+		</menuTextSmall>
+		<menuBackground name="menubg">
+			<color>242424</color>
+			<cornerSize>32 32</cornerSize>
+		</menuBackground>
+	</view>
+
+    <subset name="system-icons" displayName="Display System Icons">
+        <include name="off" displayName="Off">./_inc/subsets/system-icons-off.xml</include>
+        <include name="on" displayName="On">./_inc/subsets/system-icons-on.xml</include>
+    </subset>
+
+	<subset name="game-count" displayName="Display Game Count">
+		<include name="off" displayName="Off">./_inc/subsets/game-count-off.xml</include>
+		<include name="on" displayName="On">./_inc/subsets/game-count-on.xml</include>
+	</subset>
+
+	<subset name="abstract-background" displayName="Display Abstract Background">
+		<include name="off" displayName="Off">./_inc/subsets/abstract-background-off.xml</include>
+		<include name="on" displayName="On">./_inc/subsets/abstract-background-on.xml</include>
+	</subset>
+    
+	<subset name="textcolor" displayName="Menu text color">
+		<include name="red" displayName="Red">./_inc/subsets/text-color-red.xml</include>
+		<include name="green" displayName="Green">./_inc/subsets/text-color-green.xml</include>
+		<include name="purple" displayName="Purple">./_inc/subsets/text-color-purple.xml</include>
+		<include name="yellow" displayName="Yellow">./_inc/subsets/text-color-yellow.xml</include>
+	</subset>
+</theme>

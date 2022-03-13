@@ -1,0 +1,9 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system,basic,detailed,video,grid">
+		<image name="backgroundAll" extra="true">
+			<visible>true</visible>
+		</image>
+	</view>
+</theme>

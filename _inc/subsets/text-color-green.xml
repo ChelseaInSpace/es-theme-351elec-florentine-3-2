@@ -1,0 +1,16 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<variables>
+		<textColor>3d9e77</textColor>
+	</variables>
+
+	<view name="menu">
+		<menuText name="menutitle">
+			<color>${textColor}</color>
+		</menuText>
+		<menuText name="menutext">
+			<selectedColor>${textColor}</selectedColor>
+		</menuText>
+	</view>	
+</theme>

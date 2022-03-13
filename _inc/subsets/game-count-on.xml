@@ -1,0 +1,10 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   
+   <view name="system">
+      <text name="systemInfo">
+		 <pos>-0.015 0.922</pos>
+		 <alignment>right</alignment>
+      </text>
+   </view>
+</theme>

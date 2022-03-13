@@ -1,0 +1,9 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   
+   <view name="system">
+      <text name="systemInfo">
+		<visible>false</visible>
+      </text>
+   </view>
+</theme>
