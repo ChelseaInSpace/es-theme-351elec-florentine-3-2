@@ -3,11 +3,11 @@ Thanks for using Florentine, a minimalist floral design theme optimised for use 
 
 Features:
 
-- clean and minimal bw design
+- clean and minimal black&white design
 - optional textured background for system and game lists
 - Basic, Advanced, Video and Grid game list options available
 - easy toggle for all system icons and game count display respectively
-- choice of four different menu colors
+- choice of four different menu font colors
 
 Recommended UI Settings for the best experience:
 
